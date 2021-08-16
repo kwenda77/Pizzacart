@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="simple-grid.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color:#F7B538;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: large;
+            
+        }
+
+        .col-12{
+            background-color: #780116;
+        }
+       
+        .pizza{
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+/*border: 0.01cm solid black;*/
+margin-bottom: 0.5cm;
+border-radius: 0.5cm;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-12 center pizza">
+            <h1>Perfect Pizza</h1>
+          </div>
+
+          <div class="col-12 center pizza">
+            <h2>Shopping Cart</h2>
+            <table class="center">
+                <tr>
+                    <td>
+                        <h3>Small Pizza</h3>
+                    </td>
+                    <td><button class="small plusBtn" id="test" on type="button" name="add">+</button></td>
+                    <td>
+                        <h3 class="pizzaQtySmall">0</h3>
+                    </td>
+                    <td><button class="small minusBtn" on type="button" name="subtract">-</button></td>
+                    <td>
+                        <h3>R<span class="smallPizzaTotal">0.00</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>Medium Pizza</h3>
+                    </td>
+                    <td><button class="medium plusBtn" id="test" on type="button" name="add">+</button></td>
+                    <td>
+                        <h3 class="pizzaQtyMedium">0</h3>
+                    </td>
+                    <td><button class="medium minusBtn" on type="button" name="subtract">-</button></td>
+                    <td>
+                        <h3>R<span class="medPizzaTotal">0.00</span>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <h3>Large Pizza</h3>
+                    </td>
+                    <td><button class="large plusBtn" id="test" on type="button" name="add">+</button></td>
+                    <td>
+                        <h3 class="pizzaQtyLarge">0</h3>
+                    </td>
+                    <td><button class="large minusBtn" on type="button" name="subtract">-</button></td>
+                    <td>
+                        <h3>R<span class="largePizzaTotal">0.00</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="4">
+                        <h3 class="center">Total Cost</h3>
+                    </td>
+                    <td>
+                        <h3 class="center">R<span class="cartTotal">0.00</span></h3>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td colspan="5">
+                        <button class="checkOut hide check" on type="button" name="checkOut">Check Out</button>
+                    </td>
+                </tr>
+
+            </table>
+
+            <div class="payDue hide">
+                <table class="cartTable">
+                    <tr>
+                        <h3 class="hide center message">Message</h3>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3 class="center">Payment Amount:</h3>
+                        </td>
+                        <td>R<input class="payAmount" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="payButton check" on type="button" name="pay">Pay</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+          </div>
+        
+            <div class="col-4 pizza center" style="background-color: #C32F27;">
+                <h2>Small Pizza</h2>
+            <img src="whole-pizza.png" width="100">
+            <h3>R49.00</h3>
+            <button class="plusBtn small buy" on type="button" name="add">Buy</button>
+            Flavours include:
+              Cheese, 
+              Veggie, 
+              Pepperoni, 
+              Chicken & Mushroom,
+              Margherita,
+              BBQ
+              
+            </div>
+
+            <div class="col-4 pizza center" style="background-color: #DB7C26;">
+                <h2>Medium Pizza</h2>
+                <img src="whole-pizza.png" width="100">
+                <h3>R89.00</h3>
+                <button class="plusBtn medium buy" on type="button" name="add">Buy</button>
+                Flavours include:
+              Cheese, 
+              Veggie, 
+              Pepperoni, 
+              Chicken & Mushroom,
+              Margherita,
+              BBQ 
+               
+            </div>
+
+            <div class="col-4 pizza center" style="background-color: #D8572A;">
+                <h2>Large Pizza</h2>
+                <img src="whole-pizza.png" width="100">
+                <h3>R129.00</h3>
+                <button class="plusBtn large buy" on type="button" name="add">Buy</button>
+              Flavours include:
+              Cheese, 
+              Veggie, 
+              Pepperoni, 
+              Chicken & Mushroom,
+              Margherita,
+              BBQ  
+               
+            </div>
+
+        
+        
+            <div class="col-12 pizza">
+                <h2 style="text-align:center">Contact details</h2>
+                <p style="text-align:center">Contact us on 011 256 4897 info@perfectpizza.com</p>
+            </div>
+    </div>
+</div> 
+<script src="ShoppingCart.js" charset="utf-8"></script>     
+</body>
+</html>
