@@ -157,10 +157,7 @@ function payFunction() {
 
         case (paymentAmt == totalCart):{
 
-        smallQty = 0;
-        medQty = 0;
-        largeQty = 0;
-        totalCart = 0;
+        
 
         smallPizzaTotal.innerHTML = (pizzaQtySmall.innerHTML * 49).toFixed(2);
         medPizzaTotal.innerHTML = (pizzaQtyMedium.innerHTML * 89).toFixed(2);
@@ -183,10 +180,7 @@ function payFunction() {
         case (paymentAmt > totalCart):{
             var change = paymentAmt - totalCart;
             
-        smallQty = 0;
-        medQty = 0;
-        largeQty = 0;
-        totalCart = 0;
+        
     
             smallPizzaTotal.innerHTML = (pizzaQtySmall.innerHTML * 49).toFixed(2);
             medPizzaTotal.innerHTML = (pizzaQtyMedium.innerHTML * 89).toFixed(2);
@@ -195,7 +189,10 @@ function payFunction() {
             cartTotal.innerHTML = totalCart.toFixed(2);
 
             message.innerHTML = "Enjoy your Pizza, here is your change R" + change.toFixed(2);
-    
+        smallQty = 0;
+        medQty = 0;
+        largeQty = 0;
+        totalCart = 0;
             setTimeout(function () {
                 message.classList.toggle('hide');
                 payDue.classList.add('hide');
@@ -209,10 +206,7 @@ function payFunction() {
         case (paymentAmt < totalCart):{
             var differnce = totalCart - paymentAmt;
 
-        smallQty = 0;
-        medQty = 0;
-        largeQty = 0;
-        totalCart = 0;
+        
             
             message.innerHTML = "Sorry, that is not enough money! please add R" + differnce.toFixed(2);
             setTimeout(function () {
