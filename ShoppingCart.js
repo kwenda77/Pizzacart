@@ -167,6 +167,10 @@ function payFunction() {
 
         message.innerHTML = "Enjoy your Pizza!";
         
+        smallQty = 0;
+        medQty = 0;
+        largeQty = 0;
+        totalCart = 0;
         setTimeout(function () {
             message.classList.toggle('hide');
             payDue.classList.add('hide');
@@ -209,6 +213,10 @@ function payFunction() {
         
             
             message.innerHTML = "Sorry, that is not enough money! please add R" + differnce.toFixed(2);
+            smallQty = 0;
+        medQty = 0;
+        largeQty = 0;
+        totalCart = 0;
             setTimeout(function () {
             message.classList.add('hide');
         }, 5000);
