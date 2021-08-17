@@ -174,12 +174,7 @@ function payFunction() {
             checkOut.classList.remove('hide');
             
         }, 5000);
-        smallQty = 0;
-        medQty = 0;
-        largeQty = 0;
-        totalCart = 0;
-        break;
-
+        
         }
 
         case (paymentAmt > totalCart):{
@@ -201,10 +196,7 @@ function payFunction() {
                 checkOut.classList.remove('hide');
                 
             }, 5000);
-        smallQty = 0;
-        medQty = 0;
-        largeQty = 0;
-        totalCart = 0;
+        
 
             
             break;
@@ -217,10 +209,7 @@ function payFunction() {
         
             
             message.innerHTML = "Sorry, that is not enough money! please add R" + differnce.toFixed(2);
-        smallQty = 0;
-        medQty = 0;
-        largeQty = 0;
-        totalCart = 0;
+        
             setTimeout(function () {
             message.classList.add('hide');
         }, 5000);
